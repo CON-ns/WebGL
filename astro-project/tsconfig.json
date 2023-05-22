@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "types": [
+      "@astrojs/image/client"
+    ],
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": false,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
+}

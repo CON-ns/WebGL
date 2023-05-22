@@ -1,0 +1,32 @@
+---
+//全ページ共通のコンポーネントです
+//以下はLayoutを呼び出すときに与える変数です
+export interface Props {
+	title: string;
+}
+import '../scss/style.scss';
+const { title } = Astro.props;//{title}として使用する
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="stylesheet" href="https://use.typekit.net/tlo0yvi.css">
+		<link rel="stylesheet" href="https://unpkg.com/open-props/open-props.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css">
+		
+		<link rel="stylesheet" href="src/scss/style.scss">
+	</head>
+	<body>
+		<slot />
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.11.0/lottie.min.js"></script> -->
+		<script src="../js/script.ts"></script>
+	</body>
+</html>
+
+
