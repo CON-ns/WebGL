@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Astroを用いた開発環境です
 
 ## 出来ること
@@ -22,3 +23,6 @@ npm run build
 ## 2回目以降
 cd astro-project
 npm run dev
+=======
+# WebGL
+>>>>>>> origin/main
