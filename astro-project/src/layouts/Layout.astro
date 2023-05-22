@@ -5,6 +5,7 @@ export interface Props {
 	title: string;
 }
 import '../scss/style.scss';
+import Header from "../layouts/Header.astro";
 const { title } = Astro.props;//{title}として使用する
 ---
 
@@ -23,8 +24,8 @@ const { title } = Astro.props;//{title}として使用する
 		<link rel="stylesheet" href="src/scss/style.scss">
 	</head>
 	<body>
+		<Header />
 		<slot />
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.11.0/lottie.min.js"></script> -->
 		<script src="../js/script.ts"></script>
 	</body>
 </html>
